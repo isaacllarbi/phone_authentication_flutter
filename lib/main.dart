@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
         accentColor: Colors.redAccent,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         // fontFamily: GoogleFonts.lato().fontFamily,
-        textTheme: GoogleFonts.montserratTextTheme()
+        textTheme: GoogleFonts.latoTextTheme()
       ),
       home: StreamBuilder(
         stream: FirebaseAuth.instance.onAuthStateChanged,
