@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:phone_authentication_flutter/enter_code_screen.dart';
 import 'package:phone_authentication_flutter/enter_number_screen.dart';
 import 'package:phone_authentication_flutter/phone_auth_screen.dart';
@@ -18,6 +19,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.red,
         accentColor: Colors.redAccent,
         visualDensity: VisualDensity.adaptivePlatformDensity,
+        // fontFamily: GoogleFonts.lato().fontFamily,
+        textTheme: GoogleFonts.montserratTextTheme()
       ),
       home: StreamBuilder(
         stream: FirebaseAuth.instance.onAuthStateChanged,
